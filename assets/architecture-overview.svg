@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e1e2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#181825;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="600" fill="url(#bgGrad)"/>
+  <text x="500" y="50" font-family="monospace" font-size="24" font-weight="bold" fill="#06b6d4" text-anchor="middle">Architecture Overview</text>
+  
+  <!-- Analyst Terminal -->
+  <rect x="50" y="120" width="250" height="200" rx="10" fill="#1e1e2e" stroke="#06b6d4" stroke-width="2"/>
+  <text x="175" y="150" font-family="monospace" font-size="16" font-weight="bold" fill="#06b6d4" text-anchor="middle">Analyst Terminal</text>
+  <text x="175" y="180" font-family="monospace" font-size="12" fill="#cdd6f4" text-anchor="middle">Logs / PCAPs</text>
+  <text x="175" y="200" font-family="monospace" font-size="12" fill="#cdd6f4" text-anchor="middle">Memory Dumps</text>
+  <text x="175" y="220" font-family="monospace" font-size="12" fill="#cdd6f4" text-anchor="middle">Threat Feeds</text>
+  <text x="175" y="240" font-family="monospace" font-size="12" fill="#cdd6f4" text-anchor="middle">Evidence Files</text>
+  
+  <!-- Arrow 1 -->
+  <path d="M 300 220 L 380 220" stroke="#f59e0b" stroke-width="3" marker-end="url(#arrow)"/>
+  
+  <!-- OpenCode CLI -->
+  <rect x="380" y="120" width="240" height="200" rx="10" fill="#1e1e2e" stroke="#06b6d4" stroke-width="2"/>
+  <text x="500" y="150" font-family="monospace" font-size="16" font-weight="bold" fill="#06b6d4" text-anchor="middle">OpenCode CLI</text>
+  <text x="500" y="180" font-family="monospace" font-size="12" fill="#cdd6f4" text-anchor="middle">Agentic Loop</text>
+  <text x="500" y="200" font-family="monospace" font-size="12" fill="#cdd6f4" text-anchor="middle">File Ops</text>
+  <text x="500" y="220" font-family="monospace" font-size="12" fill="#cdd6f4" text-anchor="middle">Script Execution</text>
+  <text x="500" y="240" font-family="monospace" font-size="12" fill="#cdd6f4" text-anchor="middle">Tool Chaining</text>
+  
+  <!-- Arrow 2 -->
+  <path d="M 620 220 L 700 220" stroke="#f59e0b" stroke-width="3" marker-end="url(#arrow)"/>
+  
+  <!-- Nemotron 3 Ultra -->
+  <rect x="700" y="120" width="250" height="200" rx="10" fill="#1e1e2e" stroke="#22c55e" stroke-width="2"/>
+  <text x="825" y="150" font-family="monospace" font-size="16" font-weight="bold" fill="#22c55e" text-anchor="middle">Nemotron 3 Ultra</text>
+  <text x="825" y="180" font-family="monospace" font-size="12" fill="#cdd6f4" text-anchor="middle">550B Parameters</text>
+  <text x="825" y="200" font-family="monospace" font-size="12" fill="#cdd6f4" text-anchor="middle">1M Token Context</text>
+  <text x="825" y="220" font-family="monospace" font-size="12" fill="#cdd6f4" text-anchor="middle">MoE Architecture</text>
+  <text x="825" y="240" font-family="monospace" font-size="12" fill="#cdd6f4" text-anchor="middle">Agentic Reasoning</text>
+  
+  <!-- Local Tools -->
+  <rect x="150" y="380" width="200" height="150" rx="10" fill="#1e1e2e" stroke="#94e2d5" stroke-width="2"/>
+  <text x="250" y="405" font-family="monospace" font-size="14" font-weight="bold" fill="#94e2d5" text-anchor="middle">Local Tools</text>
+  <text x="250" y="430" font-family="monospace" font-size="11" fill="#cdd6f4" text-anchor="middle">tshark, yara</text>
+  <text x="250" y="445" font-family="monospace" font-size="11" fill="#cdd6f4" text-anchor="middle">volatility3</text>
+  <text x="250" y="460" font-family="monospace" font-size="11" fill="#cdd6f4" text-anchor="middle">jq, sigma-cli</text>
+  
+  <!-- NVIDIA NIM -->
+  <rect x="400" y="380" width="200" height="150" rx="10" fill="#1e1e2e" stroke="#22c55e" stroke-width="2"/>
+  <text x="500" y="405" font-family="monospace" font-size="14" font-weight="bold" fill="#22c55e" text-anchor="middle">NVIDIA NIM</text>
+  <text x="500" y="430" font-family="monospace" font-size="11" fill="#cdd6f4" text-anchor="middle">Hosted Endpoint</text>
+  <text x="500" y="445" font-family="monospace" font-size="11" fill="#cdd6f4" text-anchor="middle">No Local GPU</text>
+  <text x="500" y="460" font-family="monospace" font-size="11" fill="#cdd6f4" text-anchor="middle">Free Tier</text>
+  
+  <!-- SOAR/CI/CD -->
+  <rect x="650" y="380" width="200" height="150" rx="10" fill="#1e1e2e" stroke="#f59e0b" stroke-width="2"/>
+  <text x="750" y="405" font-family="monospace" font-size="14" font-weight="bold" fill="#f59e0b" text-anchor="middle">Automation</text>
+  <text x="750" y="430" font-family="monospace" font-size="11" fill="#cdd6f4" text-anchor="middle">SOAR Playbooks</text>
+  <text x="750" y="445" font-family="monospace" font-size="11" fill="#cdd6f4" text-anchor="middle">CI/CD Pipeline</text>
+  <text x="750" y="460" font-family="monospace" font-size="11" fill="#cdd6f4" text-anchor="middle">Cron Jobs</text>
+  
+  <!-- Arrow definitions -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#f59e0b"/>
+    </marker>
+  </defs>
+  
+  <!-- Legend -->
+  <text x="500" y="570" font-family="monospace" font-size="12" fill="#94e2d5" text-anchor="middle">Analyst → OpenCode → Nemotron 3 Ultra → Local Tools / Automation</text>
+</svg>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e1e2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#181825;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#22c55e;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="400" fill="url(#bgGrad)"/>
+  <text x="600" y="140" font-family="monospace" font-size="32" font-weight="bold" fill="url(#accentGrad)" text-anchor="middle">🛡️ SOC-Nemotron-CLI</text>
+  <text x="600" y="190" font-family="monospace" font-size="18" fill="#cdd6f4" text-anchor="middle">Terminal-Based AI-Assisted Cybersecurity Operations</text>
+  <text x="600" y="230" font-family="monospace" font-size="16" fill="#94e2d5" text-anchor="middle">Powered by NVIDIA Nemotron 3 Ultra (550B) + OpenCode CLI</text>
+  <g transform="translate(600, 300)">
+    <circle r="40" fill="none" stroke="#06b6d4" stroke-width="3"/>
+    <text x="0" y="5" font-family="monospace" font-size="14" fill="#06b6d4" text-anchor="middle" font-weight="bold">OpenCode</text>
+    <circle cx="100" cy="0" r="40" fill="none" stroke="#22c55e" stroke-width="3"/>
+    <text x="100" y="5" font-family="monospace" font-size="14" fill="#22c55e" text-anchor="middle" font-weight="bold">Nemotron</text>
+    <path d="M 40 0 L 60 0" stroke="#f59e0b" stroke-width="3" marker-end="url(#arrow)"/>
+    <defs>
+      <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+        <path d="M0,0 L0,6 L9,3 z" fill="#f59e0b"/>
+      </marker>
+    </defs>
+  </g>
+</svg>

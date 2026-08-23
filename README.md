@@ -9,7 +9,7 @@
 ---
 
 <p align="center">
-  <img src="assets/hero-banner.png" alt="SOC-Nemotron-CLI: Terminal-based AI-assisted cybersecurity operations" width="100%" />
+  <img src="assets/hero-banner.svg" alt="SOC-Nemotron-CLI: Terminal-based AI-assisted cybersecurity operations" width="100%" />
 </p>
 
 <p align="center">
@@ -18,7 +18,7 @@
 </p>
 
 <p align="center">
-  <img src="assets/architecture-overview.png" alt="Architecture: OpenCode CLI + Nemotron 3 Ultra + SOC Tools" width="80%" />
+  <img src="assets/architecture-overview.svg" alt="Architecture: OpenCode CLI + Nemotron 3 Ultra + SOC Tools" width="80%" />
 </p>
 
 ---
@@ -55,7 +55,7 @@
 ## 🚀 Quick Start (5 min)
 
 <p align="center">
-  <img src="assets/quickstart-demo.gif" alt="Quick start demo: install, configure, run first prompt" width="80%" />
+  <img src="assets/quickstart-demo.svg" alt="Quick start demo: install, configure, run first prompt" width="80%" />
 </p>
 
 ```bash
@@ -78,7 +78,7 @@ opencode "Read test.log, extract the IP, and tell me what to check next"
 ## 📖 About This Project
 
 <p align="center">
-  <img src="assets/project-overview.png" alt="Project overview: OpenCode CLI + Nemotron 3 Ultra for SOC operations" width="80%" />
+  <img src="assets/project-overview.svg" alt="Project overview: OpenCode CLI + Nemotron 3 Ultra for SOC operations" width="80%" />
 </p>
 
 SOC-Nemotron-CLI is a hands-on operational guide and prompt library for **Security Operations Center (SOC) Analysts, Threat Hunters, Detection Engineers, and Incident Responders** to leverage **NVIDIA Nemotron 3 Ultra (550B)** — a free, hosted, agentic-reasoning LLM — directly from the terminal via **OpenCode CLI**.
@@ -92,7 +92,7 @@ This repository was built as part of my personal self-study into emerging AI too
 ## 🚀 Why This Stack
 
 <p align="center">
-  <img src="assets/why-this-stack.png" alt="Why this stack: Terminal-native, Agentic, 1M context, No GPU, Scriptable" width="80%" />
+  <img src="assets/why-this-stack.svg" alt="Why this stack: Terminal-native, Agentic, 1M context, No GPU, Scriptable" width="80%" />
 </p>
 
 Most people interact with LLMs by copy-pasting logs into a browser chat window. That breaks flow during an active investigation. This stack is different:
@@ -129,19 +129,19 @@ SOC-Nemotron-CLI/
 ├── README.md          → This guide: setup, config, prompts, and operational notes
 ├── LICENSE            → MIT License
 ├── assets/            → Screenshots, diagrams, GIFs for documentation
-│   ├── hero-banner.png
-│   ├── architecture-overview.png
-│   ├── quickstart-demo.gif
-│   ├── project-overview.png
-│   ├── architecture-overview.png
-│   ├── quickstart-demo.gif
-│   ├── project-overview.png
-│   ├── why-this-stack.png
-│   ├── opencode-tui.png
-│   ├── sigma-output.png
-│   ├── memory-forensics.png
-│   ├── project-overview.png
-│   ├── why-this-stack.png
+│   ├── hero-banner.svg
+│   ├── architecture-overview.svg
+│   ├── quickstart-demo.svg
+│   ├── project-overview.svg
+│   ├── architecture-overview.svg
+│   ├── quickstart-demo.svg
+│   ├── project-overview.svg
+│   ├── why-this-stack.svg
+│   ├── opencode-tui.svg
+│   ├── sigma-output.svg
+│   ├── memory-forensics.svg
+│   ├── project-overview.svg
+│   ├── why-this-stack.svg
 │   └── ...
 ├── examples/          → Ready-to-run configs and prompt files
 │   ├── opencode.config.json
@@ -162,7 +162,7 @@ SOC-Nemotron-CLI/
 ## 🎯 Skill-Level Operational Mapping
 
 <p align="center">
-  <img src="assets/skill-mapping.png" alt="Skill level mapping: Beginner to Expert use cases" width="80%" />
+  <img src="assets/skill-mapping.svg" alt="Skill level mapping: Beginner to Expert use cases" width="80%" />
 </p>
 
 | Cybersecurity Role / Level | Primary Terminal Capabilities | Target Use Cases |
@@ -179,7 +179,7 @@ SOC-Nemotron-CLI/
 ### 0. Get Your NVIDIA API Key
 
 <p align="center">
-  <img src="assets/nvidia-api-key.png" alt="NVIDIA API key generation at build.nvidia.com" width="60%" />
+  <img src="assets/nvidia-api-key.svg" alt="NVIDIA API key generation at build.nvidia.com" width="60%" />
 </p>
 
 1. Open the [NVIDIA Nemotron 3 Ultra model page](https://build.nvidia.com/explore/discover) and sign in / create a free NVIDIA account
@@ -191,7 +191,7 @@ SOC-Nemotron-CLI/
 ### 1. Install OpenCode CLI
 
 <p align="center">
-  <img src="assets/opencode-install.png" alt="OpenCode CLI installation" width="60%" />
+  <img src="assets/opencode-install.svg" alt="OpenCode CLI installation" width="60%" />
 </p>
 
 On your macOS security analysis host:
@@ -215,7 +215,7 @@ source ~/.zshrc
 ### 3. Launch OpenCode and Connect to NVIDIA NIM
 
 <p align="center">
-  <img src="assets/opencode-tui.png" alt="OpenCode TUI with Nemotron 3 Ultra selected" width="80%" />
+  <img src="assets/opencode-tui.svg" alt="OpenCode TUI with Nemotron 3 Ultra selected" width="80%" />
 </p>
 
 ```bash
@@ -276,7 +276,7 @@ Replace `nvapi-YOUR_NVIDIA_API_KEY` with your actual NVIDIA NIM API key. **Never
 ## ✅ Verify Your Installation
 
 <p align="center">
-  <img src="assets/verify-install.png" alt="Verify installation: opencode --version, /models, test prompt" width="80%" />
+  <img src="assets/verify-install.svg" alt="Verify installation: opencode --version, /models, test prompt" width="80%" />
 </p>
 
 Before running SOC-specific prompts, confirm everything is wired up correctly:
@@ -341,7 +341,7 @@ opencode "Read {{IOC_FEED}}, correlate with internal logs in {{LOG_DIR}}, and ge
 ## ❌ Common Mistakes & Fixes
 
 <p align="center">
-  <img src="assets/common-mistakes.png" alt="Common mistakes and fixes visual guide" width="80%" />
+  <img src="assets/common-mistakes.svg" alt="Common mistakes and fixes visual guide" width="80%" />
 </p>
 
 | Mistake | Symptom | Fix |
@@ -359,7 +359,7 @@ opencode "Read {{IOC_FEED}}, correlate with internal logs in {{LOG_DIR}}, and ge
 ## 🎓 Learning Path (Week-by-Week)
 
 <p align="center">
-  <img src="assets/learning-path.png" alt="4-week learning path: Foundations → Scripting → Advanced → Integration" width="80%" />
+  <img src="assets/learning-path.svg" alt="4-week learning path: Foundations → Scripting → Advanced → Integration" width="80%" />
 </p>
 
 ### **Week 1: Foundations**
@@ -410,7 +410,7 @@ opencode --loop "Write a Python script to parse memory dump metadata using Volat
 ## 🖥️ Sample Output (Illustrative)
 
 <p align="center">
-  <img src="assets/sigma-output.png" alt="Sample Sigma rule output from Nemotron 3 Ultra" width="80%" />
+  <img src="assets/sigma-output.svg" alt="Sample Sigma rule output from Nemotron 3 Ultra" width="80%" />
 </p>
 
 To show the shape of what Nemotron 3 Ultra returns, here's an illustrative (redacted/simplified) example for the Sigma Detection Rule Authoring prompt above:
@@ -465,7 +465,7 @@ tags:
 ## 🚫 When NOT to Use This Stack
 
 <p align="center">
-  <img src="assets/when-not-to-use.png" alt="When not to use this stack: Real-time blocking, air-gapped, high-volume, compliance" width="80%" />
+  <img src="assets/when-not-to-use.svg" alt="When not to use this stack: Real-time blocking, air-gapped, high-volume, compliance" width="80%" />
 </p>
 
 | Scenario | Better Alternative |
@@ -631,38 +631,38 @@ MIT License — see [LICENSE](LICENSE) for details.
 
 ```
 assets/
-├── hero-banner.png              # Hero banner: Terminal + AI + Security theme
-├── architecture-overview.png    # Architecture diagram: OpenCode + Nemotron + SOC tools
-├── quickstart-demo.gif          # 30-second GIF: install → config → first prompt
-├── project-overview.png         # Project overview infographic
-├── why-this-stack.png           # Visual: 5 reasons why this stack
-├── opencode-tui.png             # OpenCode TUI screenshot with Nemotron selected
-├── sigma-output.png             # Sample Sigma rule output
-├── memory-forensics.png         # Memory forensics triage screenshot
-├── verify-install.png           # Verification steps screenshot
-├── common-mistakes.png          # Visual common mistakes guide
-├── learning-path.png            # 4-week learning path visual
-├── common-mistakes.png          # Common mistakes visual
-├── learning-path.png            # Learning path visual
-├── nvidia-api-key.png           # NVIDIA API key generation
-├── opencode-install.png         # OpenCode installation
-├── opencode-tui.png             # OpenCode TUI
-├── verify-install.png           # Verify installation
-├── common-mistakes.png          # Common mistakes
-├── learning-path.png            # Learning path
-├── sigma-output.png             # Sigma rule output
-├── memory-forensics.png         # Memory forensics
-├── nvidia-api-key.png           # NVIDIA API key
-├── opencode-install.png         # OpenCode install
-├── opencode-tui.png             # OpenCode TUI
-├── verify-install.png           # Verify install
-├── common-mistakes.png          # Common mistakes
-├── learning-path.png            # Learning path
-├── when-not-to-use.png          # When not to use
-├── nvidia-api-key.png           # NVIDIA API key
-├── opencode-install.png         # OpenCode install
-├── opencode-tui.png             # OpenCode TUI
-└── verify-install.png           # Verify install
+├── hero-banner.svg              # Hero banner: Terminal + AI + Security theme
+├── architecture-overview.svg    # Architecture diagram: OpenCode + Nemotron + SOC tools
+├── quickstart-demo.svg          # 30-second GIF: install → config → first prompt
+├── project-overview.svg         # Project overview infographic
+├── why-this-stack.svg           # Visual: 5 reasons why this stack
+├── opencode-tui.svg             # OpenCode TUI screenshot with Nemotron selected
+├── sigma-output.svg             # Sample Sigma rule output
+├── memory-forensics.svg         # Memory forensics triage screenshot
+├── verify-install.svg           # Verification steps screenshot
+├── common-mistakes.svg          # Visual common mistakes guide
+├── learning-path.svg            # 4-week learning path visual
+├── common-mistakes.svg          # Common mistakes visual
+├── learning-path.svg            # Learning path visual
+├── nvidia-api-key.svg           # NVIDIA API key generation
+├── opencode-install.svg         # OpenCode installation
+├── opencode-tui.svg             # OpenCode TUI
+├── verify-install.svg           # Verify installation
+├── common-mistakes.svg          # Common mistakes
+├── learning-path.svg            # Learning path
+├── sigma-output.svg             # Sigma rule output
+├── memory-forensics.svg         # Memory forensics
+├── nvidia-api-key.svg           # NVIDIA API key
+├── opencode-install.svg         # OpenCode install
+├── opencode-tui.svg             # OpenCode TUI
+├── verify-install.svg           # Verify install
+├── common-mistakes.svg          # Common mistakes
+├── learning-path.svg            # Learning path
+├── when-not-to-use.svg          # When not to use
+├── nvidia-api-key.svg           # NVIDIA API key
+├── opencode-install.svg         # OpenCode install
+├── opencode-tui.svg             # OpenCode TUI
+└── verify-install.svg           # Verify install
 ```
 
 ### Suggested Image Specs:
