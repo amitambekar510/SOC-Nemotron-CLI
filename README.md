@@ -107,16 +107,15 @@ Most people interact with LLMs by copy-pasting logs into a browser chat window. 
 
 ## 💻 Platform Support
 
-⚠️ **Tested on macOS only (as of now)**
-This guide, its shell commands (`~/.zshrc`), and setup steps have been written and verified on macOS. Linux and Windows users may need to adapt shell config paths (e.g. `~/.bashrc`) and PATH handling accordingly — this has not yet been tested on those platforms.
+This guide was originally written and tested on **macOS**. Companion editions for other platforms are available:
 
-| Platform | Status |
-|----------|--------|
-| 🍎 macOS | ✅ Tested & Documented |
-| 🐧 Linux | 🔜 Coming soon — planned for a future update |
-| 🪟 Windows | 🔜 Coming soon — planned for a future update |
+| Platform | Status | Repository |
+|----------|--------|------------|
+| 🍎 **macOS** | ✅ **Tested & Documented** | This repo |
+| 🪟 **Windows** | 🧪 **Community-Testing** | [`SOC-Nemotron-CLI-Windows`](https://github.com/amitambekar510/SOC-Nemotron-CLI-Windows) |
+| 🐧 **Linux / WSL2** | 🔜 Coming Soon | Planned (separate repo) |
 
-📌 **Roadmap:** Linux and Windows-specific setup guides (including WSL instructions for Windows) are planned and will be added to this repository in a future update. Stay tuned!
+> **Note:** The underlying CLI and API behavior is identical across platforms. Platform differences are cosmetic (PATH handling, shell syntax). The Windows edition adapts the same setup and prompt library for native Windows / PowerShell — community-testing in progress, feedback welcome!
 
 📖 **See also:** [Platform Support Details](PLATFORM_SUPPORT.md) (coming soon)
 
@@ -570,9 +569,9 @@ source ~/.zshrc
 
 ## 🗺️ Roadmap
 
-- [x] macOS setup guide, config, and prompt library
-- [ ] Linux setup guide (bash/zsh PATH handling, distro-specific notes)
-- [ ] Windows setup guide (native + WSL instructions)
+- [x] macOS setup guide, config, and prompt library (this repo)
+- [x] Windows setup guide (native PowerShell) — [`SOC-Nemotron-CLI-Windows`](https://github.com/amitambekar510/SOC-Nemotron-CLI-Windows)
+- [ ] Linux / WSL2 setup guide (bash/zsh PATH handling, distro-specific notes)
 - [ ] Additional SOC/IR prompt examples as workflows expand
 - [ ] `examples/` folder with ready-to-run configs and prompt files
 - [ ] Reference scripts (log parsers, Sigma generators, Volatility wrappers)
