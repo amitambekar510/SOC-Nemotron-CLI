@@ -1,0 +1,25 @@
+name: Validate workbench
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - name: Check generated workflows
+        run: python3 scripts/build_workbench.py --check
+      - name: Validate launcher and local references
+        run: python3 -m unittest discover -s tests -p 'test_*.py'
+      - name: Validate JavaScript and prompt behavior
+        run: |
+          node --check workbench/dist/app.js
+          node --check workbench/dist/core.js
+          node --check workbench/dist/workflows.js
+          node --test tests/workbench.test.cjs
